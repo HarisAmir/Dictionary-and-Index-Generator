@@ -40,6 +40,7 @@ def index_c(request):
                 encoding = 'utf-8'
                 new_text = str(text, encoding)
                 num_of_lines = new_text.split("\n")
+
                 # get words
                 words = {}
                 for j in range(1, len(num_of_lines) + 1):
@@ -51,7 +52,8 @@ def index_c(request):
                                 'also', 'Also', 'can', 'do', 'etc', 'get', 'in', 'on', 'or', 'to', 'use', 'with', 'which',
                                 'You', 'you', 'would', 'an', 'as', 'As', 'been', 'but', 'come', 'from', 'for', 'he', 'I',
                                 'what', 'when', 'where', 'here', 'want', 'wants', 'had', 'have', 'up', 'using', 'used', 'A',
-                                'are', 'by', 'If', 'if', 'In', 'will', 'we']
+                                'are', 'by', 'If', 'if', 'In', 'will', 'we', 'We', 'that', 'his', 'it', 'It', 'those', 'their'
+                                , 'then', 'has', 'any']
 
                 # Create Tree Data Structure
                 start = Node("Text")  # head node
@@ -112,7 +114,8 @@ def index_c(request):
                                 'also', 'Also', 'can', 'do', 'etc', 'get', 'in', 'on', 'or', 'to', 'use', 'with', 'which',
                                 'You', 'you', 'would', 'an', 'as', 'As', 'been', 'but', 'come', 'from', 'for', 'he', 'I',
                                 'what', 'when', 'where', 'here', 'want', 'wants', 'had', 'have', 'up', 'using', 'used', 'A',
-                                'are', 'by', 'If', 'if', 'In', 'will', 'we']
+                                'are', 'by', 'If', 'if', 'In', 'will', 'we', 'We', 'that', 'his', 'it', 'It', 'those', 'their'
+                                , 'then', 'has', 'any']
 
                 # Create Tree Data Structure
                 start = Node("Text")  # head node

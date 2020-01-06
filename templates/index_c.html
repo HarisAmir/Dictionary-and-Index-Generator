@@ -95,7 +95,7 @@
             <form action="" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 <label class="mu-primary-btn"> Upload your file
-                  <input class = "mu-primary-btn" type="file" name="file">
+                  <input class = "mu-primary-btn" type="file" name="file" accept=".txt" required>
                 </label>
                 <br>
                 <input class="mu-primary-btn" type="submit" name="index_gen" value="Generate Index" />

@@ -21,11 +21,20 @@
             margin-left: 70px;
 
         }
+        .container{
+            background-color: white;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding-top: 1px;
+
+        }
     </style>
 </head>
-<body>
+<body bgcolor="#808080">
+
+<div class="container">
     <h1 style="font-size: 300%; text-align : left">Index</h1>
-    <table>
+
     {% for ind in list %}
 
         {% if ind in alpha %}
@@ -35,6 +44,6 @@
         {% endif %}
 
     {% endfor %}
-    </table>
+</div>
 </body>
 </html>
